@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+
 import 'package:testes/bloc/counter/counter_controller.dart';
 import 'package:testes/bloc/counter/counter_page.dart';
 import 'package:testes/bloc/timer/timer_page.dart';
@@ -13,6 +14,7 @@ import 'package:testes/mobx/github%20repos/github_view.dart';
 import 'package:testes/mobx/hacker%20news/news_view.dart';
 import 'package:testes/mobx/random%20stream/random_view.dart';
 import 'package:testes/mobx/todo/todo_view.dart';
+import 'package:testes/pen/home_pen.dart';
 
 class RouterNav {
   final _router = GoRouter(
@@ -35,7 +37,7 @@ class RouterNav {
       ),
       GoRoute(
         path: '/mobxCounter',
-        builder: (context, state) => MobxCounter(),
+        builder: (context, state) => const MobxCounter(),
       ),
       GoRoute(
         path: '/mobxDiceCounter',
@@ -62,6 +64,10 @@ class RouterNav {
       GoRoute(
         path: '/random',
         builder: (context, state) => const RandomNumberExample(),
+      ),
+      GoRoute(
+        path: '/pen',
+        builder: (context, state) => const HomePen(),
       ),
     ],
   );

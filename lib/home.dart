@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:go_router/go_router.dart';
 
 class Home extends StatelessWidget {
@@ -51,6 +52,10 @@ class Home extends StatelessWidget {
             ElevatedButton(
               onPressed: () => context.push('/random'),
               child: const Text('Random Number'),
+            ),
+            ElevatedButton(
+              onPressed: () => context.push('/pen'),
+              child: const Text('Pen'),
             ),
           ],
         ),
