@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:testes/bloc/counter/counter_controller.dart';
 import 'package:testes/bloc/counter/counter_page.dart';
 import 'package:testes/bloc/timer/timer_page.dart';
+import 'package:testes/did_up_widget/did_up_widget.dart';
 import 'package:testes/get_it_bindings.dart';
 import 'package:testes/home.dart';
 import 'package:testes/mobx/connectivity/connectivity_store.dart';
@@ -68,6 +69,10 @@ class RouterNav {
       GoRoute(
         path: '/pen',
         builder: (context, state) => const HomePen(),
+      ),
+      GoRoute(
+        path: '/didUp',
+        builder: (context, state) => const DidUpdateWidget(),
       ),
     ],
   );

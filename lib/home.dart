@@ -57,6 +57,10 @@ class Home extends StatelessWidget {
               onPressed: () => context.push('/pen'),
               child: const Text('Pen'),
             ),
+            ElevatedButton(
+              onPressed: () => context.push('/didUp'),
+              child: const Text('didUpdate'),
+            ),
           ],
         ),
       ),
