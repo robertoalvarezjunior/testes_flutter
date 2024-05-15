@@ -61,6 +61,10 @@ class Home extends StatelessWidget {
               onPressed: () => context.push('/didUp'),
               child: const Text('didUpdate'),
             ),
+            ElevatedButton(
+              onPressed: () => context.push('/modals'),
+              child: const Text('Modals'),
+            ),
           ],
         ),
       ),

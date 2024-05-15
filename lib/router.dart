@@ -15,6 +15,7 @@ import 'package:testes/mobx/github%20repos/github_view.dart';
 import 'package:testes/mobx/hacker%20news/news_view.dart';
 import 'package:testes/mobx/random%20stream/random_view.dart';
 import 'package:testes/mobx/todo/todo_view.dart';
+import 'package:testes/modals/modals.dart';
 import 'package:testes/pen/home_pen.dart';
 
 class RouterNav {
@@ -73,6 +74,10 @@ class RouterNav {
       GoRoute(
         path: '/didUp',
         builder: (context, state) => const DidUpdateWidget(),
+      ),
+      GoRoute(
+        path: '/modals',
+        builder: (context, state) => const Modals(),
       ),
     ],
   );
